@@ -1,0 +1,162 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java, XML and Databases</title>
+<meta name=Description content="30-Aug-02: 0: Embedded SQL in Java">
+<link rel=next href=slide0375.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0371.htm');   
+  else
+    parent.location.href = "../02.fareast.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="master11_background.jpg" bgcolor=white alink="#0066ff"
+link=red vlink="#009900" text=black topmargin=0 leftmargin=0 onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=170 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=101 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=86 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=43 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=29 height=33></td>
+  <td width=357 height=33 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=357 height=33><font face=Arial size=5>0: Embedded SQL in Java</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=89 height=33 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=475 height=14 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=29 height=195></td>
+  <td width=400 height=195 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=47 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=37 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=11 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=97 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=102 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=22 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=382 height=24 colspan=11><font face=Arial size=4>Aimed at
+    programmers already familiar</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=399 height=1 colspan=12></td>
+   </tr>
+   <tr>
+    <td width=17 height=24></td>
+    <td width=106 height=24 colspan=6><font face=Arial size=4>with ESQL</font><br>
+    </td>
+    <td width=276 height=24 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=399 height=9 colspan=12></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=338 height=24 colspan=10><font face=Arial size=4>JDBC driver and
+    URL still needed,</font><br>
+    </td>
+    <td width=44 height=24></td>
+   </tr>
+   <tr>
+    <td width=399 height=1 colspan=12></td>
+   </tr>
+   <tr>
+    <td width=17 height=24></td>
+    <td width=316 height=24 colspan=9><font face=Arial size=4>although non-JDBC
+    connectivity</font><br>
+    </td>
+    <td width=66 height=24 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=399 height=2 colspan=12></td>
+   </tr>
+   <tr>
+    <td width=17 height=24></td>
+    <td width=214 height=24 colspan=8><font face=Arial size=4>solutions are
+    possible</font><br>
+    </td>
+    <td width=168 height=24 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=399 height=9 colspan=12></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=69 height=24 colspan=5><font face=Arial size=4>Syntax</font><br>
+    </td>
+    <td width=313 height=24 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=399 height=8 colspan=12></td>
+   </tr>
+   <tr>
+    <td width=23 height=22 colspan=3></td>
+    <td width=15 height=22><font face=Wingdings color="#0000cc" size=2>u</font></td>
+    <td width=96 height=22 colspan=4><font face=Arial size=3>#sql { … } ;</font><br>
+    </td>
+    <td width=265 height=22 colspan=4></td>
+   </tr>
+  </table>
+  </td>
+  <td width=46 height=195 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=65 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=199 height=11 colspan=2></td>
+  <td width=101 height=11><img src="master11_image067.gif" border=0 width=101
+  height=11></td>
+  <td width=136 height=11 colspan=3></td>
+  <td width=12 height=11><img src="master11_image068.gif" border=0 width=12
+  height=11></td>
+  <td width=27 height=11></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=8></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

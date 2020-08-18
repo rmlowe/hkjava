@@ -1,0 +1,197 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java 2 Platform Update for Hong Kong Java User Group</title>
+<meta name=Description content="28-Jan-03: Game API—TiledLayer">
+<link rel=next href=slide0015.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0014.htm');   
+  else
+    parent.location.href = "../javaupdateforjug.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0014_background.gif" bgcolor=white alink="#3333cc"
+link="#ccccff" vlink="#b2b2b2" text=black topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=264 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=114 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=64 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=38 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=17 height=27></td>
+  <td width=268 height=27 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=268 height=27><font face=Arial color="#cc0000" size=4><b>Game
+    API—TiledLayer</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=190 height=27 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=475 height=14 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=21 height=199 colspan=2></td>
+  <td width=443 height=199 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=9 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=265 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=31 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=25 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=32 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=26 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=35 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=425 height=24 colspan=7 rowspan=3><font face=Arial size=4>Visual
+    element composed of a </font><font face=Arial color="#cc0000" size=4>grid</font><font
+    face=Arial color=black size=4> that can</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=17 height=21 colspan=2></td>
+    <td width=265 height=21><font face=Arial size=4>be filled using a set of </font><font
+    face=Arial color="#cc0000" size=4>cells</font><br>
+    </td>
+    <td width=160 height=21 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=442 height=9 colspan=9></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+    <td width=353 height=24 colspan=4 rowspan=3><font face=Arial size=4>Cells
+    are provided in a single Image</font><br>
+    </td>
+    <td width=72 height=9 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+    <td width=72 height=7 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=72 height=8 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=442 height=9 colspan=9></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+    <td width=296 height=24 colspan=2 rowspan=3><font face=Arial size=4>Animated
+    cells can be defined</font><br>
+    </td>
+    <td width=129 height=9 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+    <td width=129 height=7 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=129 height=8 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=442 height=9 colspan=9></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+    <td width=379 height=24 colspan=5 rowspan=3><font face=Arial size=4>Each
+    element of the grid can contain a</font><br>
+    </td>
+    <td width=46 height=9 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+    <td width=46 height=7 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=46 height=8 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=17 height=22 colspan=2></td>
+    <td width=321 height=22 colspan=3><font face=Arial size=4>specific cell, or
+    can be left empty</font><br>
+    </td>
+    <td width=104 height=22 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=442 height=8 colspan=9></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+    <td width=414 height=24 colspan=6 rowspan=3><font face=Arial size=4>Allows
+    large visual elements to be created</font><br>
+    </td>
+    <td width=11 height=9></td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+    <td width=11 height=7></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=11 height=8></td>
+   </tr>
+  </table>
+  </td>
+  <td width=11 height=199></td>
+ </tr>
+ <tr>
+  <td width=475 height=25 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=399 height=39 colspan=4></td>
+  <td width=64 height=39><img src="slide0014_image012.gif" border=0 width=64
+  height=39></td>
+  <td width=12 height=39 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=14 colspan=7></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

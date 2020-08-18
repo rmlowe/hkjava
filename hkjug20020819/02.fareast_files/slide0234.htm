@@ -1,0 +1,192 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java, XML and Databases</title>
+<meta name=Description content="30-Aug-02: XML Storage/Retrieval (1)">
+<link rel=next href=slide0235.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0234.htm');   
+  else
+    parent.location.href = "../02.fareast.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="master11_background.jpg" bgcolor=white alink="#0066ff"
+link=red vlink="#009900" text=black topmargin=0 leftmargin=0 onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=170 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=101 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=82 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=51 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=29 height=33></td>
+  <td width=353 height=33 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=353 height=33><font face=Arial size=5>XML Storage/Retrieval (1)</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=93 height=33 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=475 height=12 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=29 height=210></td>
+  <td width=404 height=210 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=62 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=27 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=41 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=70 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=69 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=59 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=19 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=17 height=22><font face=Wingdings color=red size=2>n</font></td>
+    <td width=111 height=22 colspan=6><font face=Arial size=3>BLOB/CLOB</font><br>
+    </td>
+    <td width=275 height=22 colspan=7></td>
+   </tr>
+   <tr>
+    <td width=403 height=4 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=23 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Wingdings color="#0000cc" size=1>u</font></td>
+    <td width=270 height=19 colspan=6><font face=Arial size=2>Easy way of
+    storing XML documents</font><br>
+    </td>
+    <td width=95 height=19 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=403 height=2 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=23 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Wingdings color="#0000cc" size=1>u</font></td>
+    <td width=201 height=19 colspan=5><font face=Arial size=2>Write
+    user-defined routines</font><br>
+    </td>
+    <td width=164 height=19 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=403 height=2 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=23 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Wingdings color="#0000cc" size=1>u</font></td>
+    <td width=342 height=19 colspan=8><font face=Arial size=2>Full-text
+    indexing may be possible (e.g. Verity)</font><br>
+    </td>
+    <td width=23 height=19 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=403 height=2 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=17 height=22><font face=Wingdings color=red size=2>n</font></td>
+    <td width=152 height=22 colspan=7><font face=Arial size=3>JDBC Extensions</font><br>
+    </td>
+    <td width=234 height=22 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=403 height=4 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=23 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Wingdings color="#0000cc" size=1>u</font></td>
+    <td width=329 height=19 colspan=7><font face=Arial size=2>Sun has developed
+    JAXP (Java API for XML</font><br>
+    </td>
+    <td width=36 height=19 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=38 height=17 colspan=4></td>
+    <td width=63 height=17 colspan=2><font face=Arial size=2>Parsing)</font><br>
+    </td>
+    <td width=302 height=17 colspan=8></td>
+   </tr>
+   <tr>
+    <td width=403 height=2 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=23 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Wingdings color="#0000cc" size=1>u</font></td>
+    <td width=361 height=19 colspan=9><font face=Arial size=2>Easy storage and
+    retrieval of XML documents for</font><br>
+    </td>
+    <td width=4 height=19></td>
+   </tr>
+   <tr>
+    <td width=38 height=17 colspan=4></td>
+    <td width=90 height=17 colspan=3><font face=Arial size=2>JDBC users</font><br>
+    </td>
+    <td width=275 height=17 colspan=7></td>
+   </tr>
+   <tr>
+    <td width=403 height=2 colspan=14></td>
+   </tr>
+   <tr>
+    <td width=23 height=19 colspan=3></td>
+    <td width=15 height=19><font face=Wingdings color="#0000cc" size=1>u</font></td>
+    <td width=365 height=19 colspan=10><font face=Arial size=2>JDBC drivers
+    from several vendors support JAXP</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=42 height=210 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=52 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=199 height=11 colspan=2></td>
+  <td width=101 height=11><img src="master11_image141.gif" border=0 width=101
+  height=11></td>
+  <td width=136 height=11 colspan=3></td>
+  <td width=12 height=11><img src="master11_image142.gif" border=0 width=12
+  height=11></td>
+  <td width=27 height=11></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=8></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

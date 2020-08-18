@@ -1,0 +1,85 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>HKJava.com &gt; Building Java Enterprise Applications Volume I: Architecture</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif" size="-1"><a href="../index.html">HKJava.com</a> 
+&gt; <b>Building Java Enterprise Applications Volume I: Architecture</b></font> 
+<hr size="1" noshade>
+<p> <font face="Arial, Helvetica, sans-serif" size="-1"><a href="http://www.oreilly.com/catalog/javentappsv1/"><img src="javentappsv1.s.gif" width="145" height="190" align="left" border="0"></a> 
+  </font> 
+<table>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="-1"><b>Title: </b></font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="-1"><a href="http://www.oreilly.com/catalog/javentappsv1/">Building 
+      Java Enterprise Applications Volume I: Architecture</a></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="-1"><b>Author: </b></font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="-1">Brett McLaughlin</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="-1"><b>Publisher</b></font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="-1">O'Reilly &amp; Associates</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="-1"><b>Publication date: 
+      </b></font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="-1">March 2002</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif" size="-1"><b>ISBN: </b></font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="-1">0-596-00123-1</font></td>
+  </tr>
+</table>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">The subtitle of the first 
+  volume in the <i>Building Java Enterprise Applications</i> series is somewhat 
+  misleading. The book focuses on implementing the data storage and business rules 
+  of an enterprise system, with discussion of building a web interface deferred 
+  to Volume II. (Volume III will focus on Web services.) Calling this &quot;architecture&quot; 
+  implies that an enterprise architect need not be concerned with user interfaces 
+  to enterprise systems, which makes about as much sense as saying that the architect 
+  of a house need not be concerned with the external appearance of the building 
+  he designs. Architects take note: this book is about the foundations, not the 
+  fa&ccedil;ade.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">O'Reilly books are typically 
+  stronger on practical &quot;how-to&quot; advice than theoretical discussion, 
+  and this one is no exception. The text is packed with SQL scripts, code examples 
+  and deployment descriptors, and is not for those who don't like to get their 
+  hands dirty. On the other hand, discussions of more abstract topics tend to 
+  be exercises in vagueness and hand-waving. For example, while object-orientation 
+  and design patterns are both given lip-service, there is little substance; in 
+  particular, one section, in which the author seems to imply that <i>encapsulation</i> 
+  (a fundamental principle behind object-oriented techniques) is essentially an 
+  obfuscation mechanism designed to improve security, could be enough to make 
+  object-oriented purists weep.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">Throughout the book the 
+  author develops a single example system, the back-end for an online brokerage. 
+  This gives the book consistency; disappointingly, however, he spends little 
+  time considering alternative approaches to the one developed; in particular, 
+  the utility of Enterprise JavaBeans, on which the system depends, is never questioned 
+  at all. The design that is developed is a particularly 'heavy' one, in which 
+  each entity in the system is implemented by an entity bean, one or more value 
+  objects, and a session bean to 'manage' the entity. Taking into account remote, 
+  local, home and local home interfaces for both entity and session beans, this 
+  can easily lead to a dozen or so classes for even the simplest of entities, 
+  without even touching the business rules! While that development overhead might 
+  be justified for some applications, it wouldn't hurt to present some more lightweight 
+  alternatives, and to consider the pros and cons of each design.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">This book is less impressive 
+  than the author's XML books (<a href="../javaxml2/index.html">Java &amp; XML</a>; 
+  <a href="http://www.oreilly.com/catalog/javaxmldatabind/">Java &amp; XML Data 
+  Binding</a>). Those looking for an introduction to J2EE would be better off 
+  with <a href="http://www.amazon.com/exec/obidos/ASIN/0201787903/qid=1027079848/sr=1-1/ref=sr_1_1/102-1066937-3232961">Designing 
+  Enterprise Applications with the J2EE(TM) Platform, Second Edition</a>, published 
+  by Addison-Wesley; those looking specifically for an introduction to Enterprise 
+  JavaBeans should pick up O'Reilly's <a href="../ejb/index.html">Enterprise JavaBeans</a> 
+  by Richard Monson-Haefel. However, for those who are prepared to read around 
+  and absorb many different perspectives on enterprise Java development, <i>Building 
+  Java Enterprise Applications Volume I</i> is worth a look.</font></p>
+</body>
+</html>

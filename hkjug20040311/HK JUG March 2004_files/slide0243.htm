@@ -1,0 +1,154 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Jerry Held</title>
+<meta name=Description content="31-Mar-04: Caching">
+<link rel=next href=slide0259.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0243.htm');   
+  else
+    parent.location.href = "../HK%20JUG%20March%202004.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="master05_background.jpg" bgcolor=black alink="#ffff66"
+link="#fd0000" vlink="#cecece" text=white topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=32 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=98 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=284 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=28 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=32 height=30></td>
+  <td width=110 height=30 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=110 height=30><font face=Arial size=5><b>Caching</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=333 height=30 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=23 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=44 height=199 colspan=2></td>
+  <td width=382 height=199 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=18 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=91 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=16 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=52 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=40 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=71 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=364 height=22 colspan=10><font face=Arial size=3>Any application
+    that caches data, now has</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=18 height=20></td>
+    <td width=189 height=20 colspan=5><font face=Arial size=3>to deal with
+    stale data</font><br>
+    </td>
+    <td width=175 height=20 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=382 height=2 colspan=11></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=229 height=22 colspan=6><font face=Arial size=3>When and how to
+    refresh?</font><br>
+    </td>
+    <td width=135 height=22 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=382 height=3 colspan=11></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=315 height=22 colspan=8><font face=Arial size=3>Will constant
+    refreshing overload the</font><br>
+    </td>
+    <td width=49 height=22 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=18 height=20></td>
+    <td width=92 height=20 colspan=2><font face=Arial size=3>database?</font><br>
+    </td>
+    <td width=272 height=20 colspan=8></td>
+   </tr>
+   <tr>
+    <td width=382 height=2 colspan=11></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=332 height=22 colspan=9><font face=Arial size=3>Problem is
+    compounded in a clustered</font><br>
+    </td>
+    <td width=32 height=22></td>
+   </tr>
+   <tr>
+    <td width=18 height=20></td>
+    <td width=108 height=20 colspan=3><font face=Arial size=3>environment</font><br>
+    </td>
+    <td width=256 height=20 colspan=7></td>
+   </tr>
+   <tr>
+    <td width=382 height=2 colspan=11></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=300 height=22 colspan=7><font face=Arial size=3>App server may
+    want be notified of</font><br>
+    </td>
+    <td width=64 height=22 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=18 height=20></td>
+    <td width=160 height=20 colspan=4><font face=Arial size=3>database changes</font><br>
+    </td>
+    <td width=204 height=20 colspan=6></td>
+   </tr>
+  </table>
+  </td>
+  <td width=49 height=199></td>
+ </tr>
+ <tr>
+  <td width=475 height=76 colspan=5></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

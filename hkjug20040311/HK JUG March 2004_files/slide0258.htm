@@ -1,0 +1,201 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Jerry Held</title>
+<meta name=Description content="31-Mar-04: JDBC">
+<link rel=next href=slide0210.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0258.htm');   
+  else
+    parent.location.href = "../HK%20JUG%20March%202004.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0258_background.gif" bgcolor=black alink="#ffff66"
+link="#fd0000" vlink="#cecece" text=white topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=32 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=72 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=153 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=28 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=24 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=39 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=9 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=14 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=28 colspan=15></td>
+ </tr>
+ <tr>
+  <td width=32 height=30></td>
+  <td width=76 height=30 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=76 height=30><font face=Arial size=5><b>JDBC</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=367 height=30 colspan=12></td>
+ </tr>
+ <tr>
+  <td width=475 height=9 colspan=15></td>
+ </tr>
+ <tr>
+  <td width=289 height=28 colspan=5></td>
+  <td width=115 height=49 colspan=8 rowspan=2><img src="slide0258_image005.gif"
+  border=0 width=115 height=49></td>
+  <td width=71 height=28 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=36 height=21 colspan=2></td>
+  <td width=225 height=137 colspan=2 rowspan=7>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=18 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=150 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=10 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=16 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=151 height=22 colspan=2><font face=Arial size=3>Java standard for</font><br>
+    </td>
+    <td width=56 height=22 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=18 height=22></td>
+    <td width=182 height=22 colspan=6><font face=Arial size=3>accessing
+    databases</font><br>
+    </td>
+    <td width=25 height=22></td>
+   </tr>
+   <tr>
+    <td width=225 height=4 colspan=8></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=164 height=22 colspan=4><font face=Arial size=3>JDBC is simply
+    the</font><br>
+    </td>
+    <td width=43 height=22 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=225 height=1 colspan=8></td>
+   </tr>
+   <tr>
+    <td width=18 height=22></td>
+    <td width=180 height=22 colspan=5><font face=Arial size=3>database
+    connection</font><br>
+    </td>
+    <td width=27 height=22 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=18 height=22></td>
+    <td width=207 height=22 colspan=7><font face=Arial size=3>utilities Java
+    developers</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=18 height=22></td>
+    <td width=161 height=22 colspan=3><font face=Arial size=3>need to build
+    upon</font><br>
+    </td>
+    <td width=46 height=22 colspan=4></td>
+   </tr>
+  </table>
+  </td>
+  <td width=28 height=21></td>
+  <td width=71 height=21 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=36 height=31 colspan=2></td>
+  <td width=214 height=31 colspan=11></td>
+ </tr>
+ <tr>
+  <td width=36 height=16 colspan=2></td>
+  <td width=76 height=16 colspan=5></td>
+  <td width=39 height=16>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=39 height=16 align=center><font face=Arial size=1>JDBC</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=99 height=16 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=36 height=6 colspan=2></td>
+  <td width=214 height=6 colspan=11></td>
+ </tr>
+ <tr>
+  <td width=36 height=16 colspan=2></td>
+  <td width=36 height=16 colspan=2></td>
+  <td width=32 height=16 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=32 height=16 align=center><font face=Arial size=1>rows</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=59 height=16 colspan=3></td>
+  <td width=30 height=16 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=30 height=16 align=center><font face=Arial size=1>SQL</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=57 height=16></td>
+ </tr>
+ <tr>
+  <td width=36 height=17 colspan=2></td>
+  <td width=214 height=17 colspan=11></td>
+ </tr>
+ <tr>
+  <td width=36 height=30 colspan=2></td>
+  <td width=60 height=30 colspan=3></td>
+  <td width=76 height=64 colspan=5 rowspan=2><img src="slide0258_image006.jpg"
+  border=0 width=76 height=64></td>
+  <td width=78 height=30 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=321 height=34 colspan=7></td>
+  <td width=78 height=34 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=90 colspan=15></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

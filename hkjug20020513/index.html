@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>HKJava.com &gt; Hong Kong Java User Group, 22 May 2002</title>
+</head>
+<body>
+<font face="Arial, Helvetica, sans-serif" size="-1"><a href="../index.html">HKJava.com</a> 
+&gt; <b>Hong Kong Java User Group, 22 May 2002</b> </font> 
+<hr size="1" noshade>
+<p> 
+<p><font face="Arial, Helvetica, sans-serif" size="-1"><b>Venue:</b> INETS, 2 
+  Floor Chuang's Enterprise Building, 382 Lockhart Road, Wanchai</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1"><b>Agenda:</b></font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif" size="-1">An <b>introduction to 
+    Robocode</b> by Alex Hui</font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="-1">Eddie Chui, BEA Systems: 
+    <b><a href="#jca">&quot;Integration Enterprise Systems with J2EE 1.3&quot;</a></b></font></li>
+</ul>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">Free refreshments were 
+  provided thanks to the generous sponsorship of <a href="http://www.bea.com/">BEA 
+  Systems</a>.</font></p>
+<hr size="1" noshade>
+<p><font face="Arial, Helvetica, sans-serif" size="-1"><b><a name="jca">Integrating 
+  Enterprise Systems with J2EE 1.3</a></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1"><i>Eddie Chui, <a href="http://www.bea.com/">BEA 
+  Systems</a></i></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">Eddie's presentation focused 
+  on the J2EE Connector Architecture. Since we can't usually rewrite existing 
+  applications in Java, it is often necessary to integrate with non-Java systems. 
+  The JCA attempts to ease the burden of integration by providing a standard mechanism 
+  for Java clients to connect to Enterprise Information Systems. Version 1.0 of 
+  the JCA was included in the J2EE platform for the first time in J2EE 1.3. Version 
+  1.5 of the JCA is currently in development.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">Under the JCA, an Enterprise 
+  Information System (for example, an Enterprise Resource Planning System, a database, 
+  or a transaction processing system) provides a <i>resource adapter</i> that 
+  can be plugged into any application server that supports JCA. A resource adapter 
+  consists of a JAR file with the filename extension <i>.rar</i>, which contains 
+  the resource adapter classes and other JARs, in addition to a deployment descriptor 
+  (named <i>ra.xml</i>) and, in some cases, native libraries required by the adapter. 
+  A resource adapter can be used in both <i>managed environments</i> (i.e. in 
+  an application server) and <i>nonmanaged environments</i> (such as in a two-tier 
+  application). A resource adapter talks to an application server through the 
+  <i>service provider interface</i> (SPI).</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">The JCA specifies three 
+  <i>system contracts</i> that a resource adapter must implement, for connection 
+  management, transaction management, and security respectively. In the case of 
+  connection management, the adapter provides a <i>connection factory</i> that 
+  creates connections. In a managed environment, the application server will typically 
+  support pooling of connections by providing a <i>connection manager</i>. A resource 
+  adapter can implement a <i>connection event listener</i> to be notified of connection-related 
+  events such as transaction commits and rollbacks.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">The transaction management 
+  contracts allow for two types of transactions: <i>local transactions</i>, which 
+  are limited in scope to the adapter's particular EIS, and <i>distributed transactions</i>, 
+  which are coordinated by an external transaction manager (typically provided 
+  by the application server) and may span multiple systems. Distributed transactions 
+  make use of the <i>Java Transaction API</i> (JTA), which is a Java mapping of 
+  the X/Open transaction model and uses a two-phase commit protocol to coordinate 
+  transactions.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">There was an interesting 
+  discussion about using the JCA with custom mainframe applications such as those 
+  used by many banks. Daniel DesRosiers pointed out that, in reality, most of 
+  these custom applications don't support distributed transactions in any meaningful 
+  way. Eddie suggested that, in these situations, a JCA adapter might bypass the 
+  service layer and access the application's data source directly. However, in 
+  situations where it is hard to work with the data source directly, a pure-Java 
+  solution such as the JCA might not be workable.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">The security contracts 
+  deal with authentication and authorisation, and support both <i>container-managed</i> 
+  and <i>component-managed</i> sign-on.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">The <i>Common Client Interface</i> 
+  (CCI) provides a standardised interface that clients can use to pull data from 
+  the EIS, roughly equivalent to the interfaces provided by JDBC for accessing 
+  relational databases. The CCI is optional in JCA 1.0, but compulsory in the 
+  forthcoming JCA 1.5.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">Eddie pointed out a few 
+  limitations of the JCA. The current version does not support asynchronous, message-oriented 
+  communication (although this might be addressed in version 2.0.), nor does it 
+  support callbacks or address workflow. Finally, there is a lack of visual tools 
+  for data mapping.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">Comparing the JCA to Web 
+  services, Eddie pointed out that legacy systems often cannot be extended to 
+  support Web services, whereas a JCA adapter can be designed to communicate with 
+  such systems using their existing custom protocols. Also, Web services are still 
+  lacking standard models for transactions and security. On the other hand, a 
+  Web service will support a wider range of clients than a JCA adapter, which 
+  supports only Java clients. Also, Web services are designed to work over the 
+  public Internet, so connectivity is extremely cheap. Finally, a hybrid solution 
+  is entirely possible; a JCA resource adapter could provide a convenient API 
+  to Java clients, while using a Web service at the network level to communicate 
+  with the EIS.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="-1">You can find out more about 
+  the J2EE Connector Architecture from <a href="http://java.sun.com/j2ee/connector/">Sun's 
+  J2EE(TM) Connector Architecture page</a>.</font></p>
+</body>
+</html>

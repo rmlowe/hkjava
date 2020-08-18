@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0069)http://web.archive.org/web/20040217124738/hkjava.com/jdbc2/index.html -->
+<HTML><HEAD><TITLE>HKJava.com > Database Programming with JDBC™ and Java™, Second Edition</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY>
+<FONT face="Arial, Helvetica, sans-serif" size=-1><A 
+href="../index.html">HKJava.com</A> &gt; <B>Database Programming with JDBC™ and 
+Java™, Second Edition</B></FONT> 
+<HR noShade SIZE=1>
+
+<P><FONT face="Arial, Helvetica, sans-serif" size=-1><A 
+href="http://www.oreilly.com/catalog/jdbc2/"><IMG height=190 
+src="jdbc2.s.gif" width=145 align=left border=0></A> </FONT> 
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1><B>Title: 
+    </B></FONT></TD>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1><A 
+      href="http://www.oreilly.com/catalog/jdbc2/">Database Programming with 
+      JDBC™ and Java™, Second Edition</A></FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1><B>Author: 
+      </B></FONT></TD>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1>George 
+    Reese</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Arial, Helvetica, sans-serif" 
+      size=-1><B>Publisher</B></FONT></TD>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1>O'Reilly &amp; 
+      Associates</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1><B>Publication date: 
+      </B></FONT></TD>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1>August 
+  2000</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Arial, Helvetica, sans-serif" size=-1><B>ISBN: 
+    </B></FONT></TD>
+    <TD><FONT face="Arial, Helvetica, sans-serif" 
+    size=-1>1-56592-616-1</FONT></TD></TR></TBODY></TABLE>
+<P><FONT face="Arial, Helvetica, sans-serif" size=-1>"A different kind of 
+animal" was the one-time tagline of O'Reilly &amp; Associates. Whoever at 
+O'Reilly came up with that slogan had undoubtedly just browsed a copy of 
+<I>Database Programming with JDBC™ and Java™</I>. The book is indeed a different 
+kind of animal—specifically, a rather bizarre two-headed creature. As you would 
+imagine, this poor beast tends to be rather confused about where it is going and 
+whom it is facing.</FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=-1>The first half of the book 
+focuses, not surprisingly, on the core JDBC APIs, including a brief ten-page 
+chapter on the basic concepts of relational databases and SQL. Chapter 3 
+introduces the basic JDBC classes and interfaces—how to obtain a <FONT 
+face="Courier New, Courier, mono">Connection<FONT 
+face="Arial, Helvetica, sans-serif"> </FONT></FONT>from a <FONT 
+face="Courier New, Courier, mono">DriverManager</FONT>; using <FONT 
+face="Courier New, Courier, mono">Statement</FONT> objects to execute queries 
+and updates; using <FONT face="Courier New, Courier, mono">ResultSet</FONT> 
+objects to examine the results of a query. It also discusses the mapping between 
+SQL datatypes and Java datatypes. Chapter 4 covers the use of <FONT 
+face="Courier New, Courier, mono">PreparedStatement</FONT>s to execute 
+precompiled SQL, and <FONT 
+face="Courier New, Courier, mono">CallableStatement</FONT>s for stored 
+procedures, as well as other more esoteric issues: the batch processing APIs, 
+advanced datatypes including <FONT 
+face="Courier New, Courier, mono">BLOB</FONT>s and <FONT 
+face="Courier New, Courier, mono">CLOB</FONT>s, and meta-data. Chapter 5 covers 
+the JDBC 2.0 Optional Package, which is an important part of the J2EE platform. 
+This includes the <FONT face="Courier New, Courier, mono">DataSource</FONT> 
+interface (which replaces <FONT 
+face="Courier New, Courier, mono">DriverManager</FONT> as the preferred way to 
+obtain database connections), support for connection pooling, the <FONT 
+face="Courier New, Courier, mono">RowSet</FONT> interface, and support for 
+distributed transactions (that is, transactions that involve more than one 
+database).</FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=-1>While there are few 
+examples, at least by O'Reilly standards, the first part of the book provides a 
+fairly complete overview of the JDBC APIs. At this point, however, the book 
+takes an unexpected turn. After spending a chapter discussing various other Java 
+enterprise technologies (JNDI, RMI, object serialization, EJB), the author 
+proceeds to spend four chapters developing, at least in outline, a complete 
+distributed component framework. This is an ambitious and challenging project, 
+but seems entirely out of place in an introductory book on JDBC. Instead of 
+describing EJB in detail (in any case, not what the book is supposed to be 
+about), the author effectively reinvents it. Thus, chapter 7 focuses on 
+architectural issues and design patterns, while chapter 8 discusses the 
+non-persistence aspects of the framework, including security and transactions. 
+Chapter 9 focuses on the actual persistence framework, and is the only chapter 
+in this half of the book that actually makes use of JDBC. Chapter 10 describes a 
+client application with a graphical user interface based on Swing. The example 
+used throughout these chapters is that of a banking application. Of course, in a 
+little over a hundred pages the author is able only to scratch the surface of 
+issues such as transaction monitors, instance pooling, relationship mapping and 
+so forth.</FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=-1>There's nothing 
+particularly wrong with the material in <I>Database Programming</I>—it's just 
+difficult to know who the intended audience is. Readers new to JDBC will 
+probably do better with a book that provides more introductory examples, while 
+those with a serious interest in Java distributed component models are unlikely 
+to require a JDBC tutorial. If, however, you are a JDBC novice who dreams of 
+writing your own EJB container from scratch, then good luck to you. This stange 
+animal might well be the perfect companion for your journey.</FONT></P>
+</BODY></HTML>

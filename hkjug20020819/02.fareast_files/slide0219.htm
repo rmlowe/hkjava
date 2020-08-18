@@ -1,0 +1,197 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java, XML and Databases</title>
+<meta name=Description content="30-Aug-02: The Great Debate ...">
+<link rel=next href=slide0264.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0219.htm');   
+  else
+    parent.location.href = "../02.fareast.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0219_background.gif" bgcolor=white alink="#0066ff"
+link=red vlink="#009900" text=black topmargin=0 leftmargin=0 onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=18 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=167 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=101 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=128 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=29 height=33 colspan=3></td>
+  <td width=279 height=33 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=279 height=33><font face=Arial size=5>The Great Debate ...</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=167 height=33 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=41 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=21 height=206 colspan=2></td>
+  <td width=454 height=206 colspan=8>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=172 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=10 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=116 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=106 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=5 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=436 height=16 colspan=6><font face="Monotype Sorts" size=1><b>}</b></font><font
+    face="Arial Narrow" size=1><b>About every ten years or so, there is a
+    “great debate” between, on the one had,</b></font><br>
+    </td>
+    <td width=18 height=16 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=453 height=16 colspan=11><font face="Arial Narrow" size=1><b>those
+    who see the problem of data modelling through a more or less relational
+    lens,</b></font><br>
+    </td>
+    <td width=1 height=16></td>
+   </tr>
+   <tr>
+    <td width=454 height=16 colspan=12><font face="Arial Narrow" size=1><b>and
+    on the other, a noisier set of “refuseniks” who have a hot new thing to
+    promote.</b></font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=182 height=16 colspan=2><font face="Arial Narrow" size=1><b>The
+    debate usually goes like this:</b></font><br>
+    </td>
+    <td width=272 height=16 colspan=10></td>
+   </tr>
+   <tr>
+    <td width=404 height=16 colspan=4><font face="Arial Narrow" size=1><b>Refuseniks:
+    Hah! You relational people with your flat tables and silly query</b></font><br>
+    </td>
+    <td width=50 height=16 colspan=8></td>
+   </tr>
+   <tr>
+    <td width=446 height=15 colspan=10><font face="Arial Narrow" size=1><b>languages!
+    You are so unhip! You simply cannot deal with the problem of [INSERT</b></font><br>
+    </td>
+    <td width=8 height=15 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=444 height=16 colspan=9><font face="Arial Narrow" size=1><b>NEW
+    THING HERE]. With an [INSERT NEW THING HERE]-DBMS we will finish you,</b></font><br>
+    </td>
+    <td width=10 height=16 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=172 height=16><font face="Arial Narrow" size=1><b>and grind your
+    bones into dust!</b></font><br>
+    </td>
+    <td width=282 height=16 colspan=11></td>
+   </tr>
+   <tr>
+    <td width=443 height=16 colspan=8><font face="Arial Narrow" size=1><b>R-people:
+    You make some good points. But unfortunately a) there is an enormous</b></font><br>
+    </td>
+    <td width=11 height=16 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=421 height=16 colspan=5><font face="Arial Narrow" size=1><b>amount
+    of money invested in building scalable, efficient and reliable database</b></font><br>
+    </td>
+    <td width=33 height=16 colspan=7></td>
+   </tr>
+   <tr>
+    <td width=454 height=16 colspan=12><font face="Arial Narrow" size=1><b>management
+    products and no one is going to drop all of that on the floor and b) you</b></font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=441 height=15 colspan=7><font face="Arial Narrow" size=1><b>are
+    confusing DBMS engineering decisions with theoretical questions. We plan to</b></font><br>
+    </td>
+    <td width=13 height=15 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=298 height=16 colspan=3><font face="Arial Narrow" size=1><b>incorporate
+    the best of these ideas into our products.</b></font><font
+    face="Monotype Sorts" size=1><b>~</b></font><br>
+    </td>
+    <td width=156 height=16 colspan=9></td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+ <tr>
+  <td width=475 height=16 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=18 height=11></td>
+  <td width=178 height=14 colspan=3 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=178 height=14><font face=Arial size=1>Source: Derived from [Brown01]</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=279 height=11 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=18 height=3></td>
+  <td width=3 height=3></td>
+  <td width=101 height=11 rowspan=2><img src="master11_image119.gif" border=0
+  width=101 height=11></td>
+  <td width=136 height=3 colspan=2></td>
+  <td width=12 height=11 rowspan=2><img src="master11_image120.gif" border=0
+  width=12 height=11></td>
+  <td width=27 height=3></td>
+ </tr>
+ <tr>
+  <td width=199 height=8 colspan=5></td>
+  <td width=136 height=8 colspan=2></td>
+  <td width=27 height=8></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=10></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java 2 Platform Update for Hong Kong Java User Group</title>
+<meta name=Description content="28-Jan-03: Game API—GameCanvas">
+<link rel=next href=slide0030.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0029.htm');   
+  else
+    parent.location.href = "../javaupdateforjug.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0029_background.gif" bgcolor=white alink="#3333cc"
+link="#ccccff" vlink="#b2b2b2" text=black topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=298 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=80 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=37 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=17 height=27></td>
+  <td width=302 height=27 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=302 height=27><font face=Arial color="#cc0000" size=4><b>Game
+    API—GameCanvas</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=156 height=27 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=13 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=21 height=207 colspan=2></td>
+  <td width=378 height=207 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=9 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=6 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=59 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=86 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=6 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=21 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=25 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=37 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=360 height=24 colspan=11 rowspan=3><font face=Arial size=4>Enhances
+    Canvas with game-centric</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=17 height=21 colspan=2></td>
+    <td width=81 height=21 colspan=4><font face=Arial size=4>features</font><br>
+    </td>
+    <td width=279 height=21 colspan=7></td>
+   </tr>
+   <tr>
+    <td width=377 height=9 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+    <td width=173 height=24 colspan=6 rowspan=3><font face=Arial size=4>Key
+    input support</font><br>
+    </td>
+    <td width=187 height=9 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+    <td width=187 height=7 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=187 height=8 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=377 height=5 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=20 colspan=3></td>
+    <td width=15 height=20><font face="Times New Roman" color="#cc0000" size=3>–</font></td>
+    <td width=248 height=20 colspan=8><font face=Arial size=3>Query game key
+    states directly</font><br>
+    </td>
+    <td width=91 height=20></td>
+   </tr>
+   <tr>
+    <td width=377 height=3 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=20 colspan=3></td>
+    <td width=15 height=20><font face="Times New Roman" color="#cc0000" size=3>–</font></td>
+    <td width=211 height=20 colspan=7><font face=Arial size=3>Simultaneous key
+    presses</font><br>
+    </td>
+    <td width=128 height=20 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=377 height=9 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=17 height=9 colspan=2></td>
+    <td width=167 height=24 colspan=5 rowspan=3><font face=Arial size=4>Off-screen
+    buffer</font><br>
+    </td>
+    <td width=193 height=9 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=8 height=7><img src=image001.gif border=0 width=6 height=7></td>
+    <td width=9 height=7></td>
+    <td width=193 height=7 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=17 height=8 colspan=2></td>
+    <td width=193 height=8 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=377 height=4 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=20 colspan=3></td>
+    <td width=15 height=20><font face="Times New Roman" color="#cc0000" size=3>–</font></td>
+    <td width=186 height=20 colspan=6><font face=Arial size=3>May be painted
+    directly</font><br>
+    </td>
+    <td width=153 height=20 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=377 height=4 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=20 colspan=3></td>
+    <td width=15 height=20><font face="Times New Roman" color="#cc0000" size=3>–</font></td>
+    <td width=173 height=20 colspan=5><font face=Arial size=3>Synchronous
+    flushing</font><br>
+    </td>
+    <td width=166 height=20 colspan=4></td>
+   </tr>
+  </table>
+  </td>
+  <td width=76 height=207></td>
+ </tr>
+ <tr>
+  <td width=475 height=72 colspan=5></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

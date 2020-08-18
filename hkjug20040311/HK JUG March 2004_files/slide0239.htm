@@ -1,0 +1,152 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Jerry Held</title>
+<meta name=Description content="31-Mar-04: Database Triggers">
+<link rel=next href=slide0240.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0239.htm');   
+  else
+    parent.location.href = "../HK%20JUG%20March%202004.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="master05_background.jpg" bgcolor=black alink="#ffff66"
+link="#fd0000" vlink="#cecece" text=white topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=32 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=239 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=159 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=28 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=32 height=30></td>
+  <td width=243 height=30 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=243 height=30><font face=Arial size=5><b>Database Triggers</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=200 height=30 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=37 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=36 height=180 colspan=2></td>
+  <td width=398 height=180 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=18 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=14 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=18 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=40 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=192 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=37 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=9 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=24 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=312 height=22 colspan=8><font face=Arial size=3>Database triggers
+    will be completely</font><br>
+    </td>
+    <td width=69 height=22 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=18 height=22></td>
+    <td width=303 height=22 colspan=7><font face=Arial size=3>transparent to
+    the J2EE application</font><br>
+    </td>
+    <td width=78 height=22 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=399 height=4 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=325 height=22 colspan=9><font face=Arial size=3>However, their
+    effects must be clearly</font><br>
+    </td>
+    <td width=56 height=22 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=399 height=1 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=18 height=22></td>
+    <td width=266 height=22 colspan=6><font face=Arial size=3>communicated and
+    considered</font><br>
+    </td>
+    <td width=115 height=22 colspan=6></td>
+   </tr>
+   <tr>
+    <td width=399 height=4 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=18 height=22><font face=Wingdings color="#cc0000" size=3>Ÿ</font></td>
+    <td width=338 height=22 colspan=10><font face=Arial size=3>Example: Data
+    validation –&gt; audit table</font><br>
+    </td>
+    <td width=43 height=22 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=399 height=4 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=33 height=19 colspan=3></td>
+    <td width=18 height=19><font face=Arial color=white size=1>–</font></td>
+    <td width=329 height=19 colspan=8><font face=Arial size=2>Objects mapped to
+    an audit table that is only</font><br>
+    </td>
+    <td width=19 height=19></td>
+   </tr>
+   <tr>
+    <td width=51 height=19 colspan=4></td>
+    <td width=348 height=19 colspan=9><font face=Arial size=2>updated through
+    triggers, must be read-only on</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=51 height=19 colspan=4></td>
+    <td width=41 height=19 colspan=2><font face=Arial size=2>J2EE</font><br>
+    </td>
+    <td width=307 height=19 colspan=7></td>
+   </tr>
+  </table>
+  </td>
+  <td width=41 height=180></td>
+ </tr>
+ <tr>
+  <td width=475 height=81 colspan=5></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

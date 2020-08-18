@@ -1,0 +1,429 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Jerry Held</title>
+<meta name=Description content="31-Mar-04: Object Persistence Layer">
+<link rel=next href=slide0212.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0256.htm');   
+  else
+    parent.location.href = "../HK%20JUG%20March%202004.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0256_background.gif" bgcolor=black alink="#ffff66"
+link="#fd0000" vlink="#cecece" text=white topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=26 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=6 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=46 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=74 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=25 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=39 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=5 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=6 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=56 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=28 colspan=32></td>
+ </tr>
+ <tr>
+  <td width=32 height=30 colspan=2></td>
+  <td width=332 height=30 colspan=26>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=332 height=30><font face=Arial size=5><b>Object Persistence Layer</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=111 height=30 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=475 height=9 colspan=32></td>
+ </tr>
+ <tr>
+  <td width=40 height=38 colspan=3></td>
+  <td width=380 height=38 colspan=26>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=18 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=304 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=18 height=19><font face=Wingdings color="#cc0000" size=2>Ÿ</font></td>
+    <td width=362 height=19 colspan=3><font face=Arial size=2>Abstracts
+    persistence details from the application</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=18 height=19></td>
+    <td width=305 height=19 colspan=2><font face=Arial size=2>layer, supports
+    Java objects/Entity Beans</font><br>
+    </td>
+    <td width=57 height=19></td>
+   </tr>
+  </table>
+  </td>
+  <td width=55 height=38 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=10 colspan=32></td>
+ </tr>
+ <tr>
+  <td width=225 height=41 colspan=12></td>
+  <td width=63 height=46 colspan=9 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=11 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=31 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=11 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=4 height=18></td>
+    <td width=53 height=18 colspan=3 align=center><font face="Arial Black"
+    color="#cc0000" size=1><b>J2EE &amp;</b></font><br>
+    </td>
+    <td width=6 height=18></td>
+   </tr>
+   <tr>
+    <td width=15 height=14 colspan=2></td>
+    <td width=31 height=14 align=center><font face="Arial Black" color="#cc0000"
+    size=1><b>Web</b></font><br>
+    </td>
+    <td width=17 height=14 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=63 height=14 colspan=5 align=center><font face="Arial Black"
+    color="#cc0000" size=1><b>Services</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=187 height=41 colspan=11></td>
+ </tr>
+ <tr>
+  <td width=26 height=1></td>
+  <td width=134 height=47 colspan=4 rowspan=8>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=21 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=38 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=59 height=16 colspan=2></td>
+    <td width=75 height=16 align=right><font face=Arial size=1>object-level</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=134 height=16 colspan=3 align=right><font face=Arial size=1>querying
+    and creation</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=21 height=15></td>
+    <td width=113 height=15 colspan=2 align=right><font face=Arial size=1>results
+    are objects</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=65 height=1 colspan=7></td>
+  <td width=187 height=1 colspan=11></td>
+ </tr>
+ <tr>
+  <td width=26 height=4></td>
+  <td width=65 height=4 colspan=7></td>
+  <td width=54 height=4 colspan=4></td>
+  <td width=122 height=47 colspan=6 rowspan=8>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=97 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=122 height=16 colspan=3><font face=Arial size=1>object creation
+    and</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=105 height=15 colspan=2><font face=Arial size=1>updates through</font><br>
+    </td>
+    <td width=17 height=15></td>
+   </tr>
+   <tr>
+    <td width=97 height=16><font face=Arial size=1>object-level API</font><br>
+    </td>
+    <td width=25 height=16 colspan=2></td>
+   </tr>
+  </table>
+  </td>
+  <td width=11 height=4></td>
+ </tr>
+ <tr>
+  <td width=26 height=8></td>
+  <td width=182 height=8 colspan=20></td>
+  <td width=11 height=8></td>
+ </tr>
+ <tr>
+  <td width=26 height=4></td>
+  <td width=21 height=4 colspan=3></td>
+  <td width=50 height=16 colspan=6 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=50 height=16 align=center><font face=Arial size=1>Objects</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=111 height=4 colspan=11></td>
+  <td width=11 height=4></td>
+ </tr>
+ <tr>
+  <td width=26 height=12></td>
+  <td width=21 height=12 colspan=3></td>
+  <td width=49 height=12 colspan=4></td>
+  <td width=50 height=16 colspan=6 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=50 height=16 align=center><font face=Arial size=1>Objects</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=12 height=12></td>
+  <td width=11 height=12></td>
+ </tr>
+ <tr>
+  <td width=26 height=4></td>
+  <td width=120 height=4 colspan=13></td>
+  <td width=12 height=4></td>
+  <td width=11 height=4></td>
+ </tr>
+ <tr>
+  <td width=26 height=10></td>
+  <td width=182 height=10 colspan=20></td>
+  <td width=11 height=10></td>
+ </tr>
+ <tr>
+  <td width=26 height=4></td>
+  <td width=40 height=4 colspan=6></td>
+  <td width=117 height=16 colspan=11 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=117 height=16 align=center><font face=Arial size=1>Persistence
+    Layer</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=25 height=4 colspan=3></td>
+  <td width=11 height=4></td>
+ </tr>
+ <tr>
+  <td width=200 height=1 colspan=11></td>
+  <td width=25 height=1 colspan=3></td>
+  <td width=11 height=1></td>
+ </tr>
+ <tr>
+  <td width=200 height=11 colspan=11></td>
+  <td width=158 height=11 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=475 height=9 colspan=32></td>
+ </tr>
+ <tr>
+  <td width=168 height=2 colspan=7></td>
+  <td width=21 height=76 colspan=2 rowspan=9><img src="slide0256_image007.gif"
+  border=0 width=21 height=76></td>
+  <td width=134 height=2 colspan=14></td>
+  <td width=21 height=76 colspan=3 rowspan=9><img src="slide0256_image008.gif"
+  border=0 width=21 height=76></td>
+  <td width=131 height=2 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=168 height=5 colspan=7></td>
+  <td width=49 height=5 colspan=7></td>
+  <td width=39 height=16 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=39 height=16 align=center><font face=Arial size=1>JDBC</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=46 height=5 colspan=6></td>
+  <td width=131 height=5 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=86 height=5 colspan=4></td>
+  <td width=75 height=47 colspan=2 rowspan=5>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=9 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=53 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=9 height=16></td>
+    <td width=65 height=16 colspan=2 align=right><font face=Arial size=1>results
+    are</font><br>
+    </td>
+    <td width=1 height=16></td>
+   </tr>
+   <tr>
+    <td width=75 height=16 colspan=4 align=right><font face=Arial size=1>returned
+    as</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=21 height=16 colspan=2></td>
+    <td width=54 height=16 colspan=2 align=right><font face=Arial size=1>raw
+    data</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=7 height=5></td>
+  <td width=49 height=5 colspan=7></td>
+  <td width=46 height=5 colspan=6></td>
+  <td width=131 height=5 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=86 height=6 colspan=4></td>
+  <td width=7 height=6></td>
+  <td width=49 height=6 colspan=7></td>
+  <td width=46 height=6 colspan=6></td>
+  <td width=3 height=6></td>
+  <td width=88 height=47 colspan=3 rowspan=5>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=74 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=5 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=88 height=16 colspan=3><font face=Arial size=1>API uses SQL</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=74 height=16><font face=Arial size=1>or database</font><br>
+    </td>
+    <td width=14 height=16 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=79 height=15 colspan=2><font face=Arial size=1>specific calls</font><br>
+    </td>
+    <td width=9 height=15></td>
+   </tr>
+  </table>
+  </td>
+  <td width=40 height=6 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=86 height=2 colspan=4></td>
+  <td width=7 height=2></td>
+  <td width=134 height=2 colspan=14></td>
+  <td width=3 height=2></td>
+  <td width=40 height=2 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=86 height=16 colspan=4></td>
+  <td width=7 height=16></td>
+  <td width=7 height=16></td>
+  <td width=32 height=16 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=32 height=16 align=center><font face=Arial size=1>rows</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=6 height=16 colspan=2></td>
+  <td width=48 height=73 colspan=4 rowspan=5><img src="slide0256_image009.gif"
+  border=0 width=48 height=73></td>
+  <td width=5 height=16></td>
+  <td width=30 height=16 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=30 height=16 align=center><font face=Arial size=1>SQL</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=6 height=16></td>
+  <td width=3 height=16></td>
+  <td width=40 height=16 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=86 height=18 colspan=4></td>
+  <td width=7 height=18></td>
+  <td width=45 height=18 colspan=6></td>
+  <td width=41 height=18 colspan=4></td>
+  <td width=3 height=18></td>
+  <td width=40 height=18 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=168 height=5 colspan=7></td>
+  <td width=45 height=5 colspan=6></td>
+  <td width=41 height=5 colspan=4></td>
+  <td width=3 height=5></td>
+  <td width=40 height=5 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=168 height=17 colspan=7></td>
+  <td width=45 height=17 colspan=6></td>
+  <td width=41 height=17 colspan=4></td>
+  <td width=131 height=17 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=234 height=17 colspan=15></td>
+  <td width=193 height=17 colspan=13></td>
+ </tr>
+ <tr>
+  <td width=475 height=39 colspan=32></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

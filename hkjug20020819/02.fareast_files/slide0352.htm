@@ -1,0 +1,278 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java, XML and Databases</title>
+<meta name=Description content="30-Aug-02: Java vs. SQL">
+<link rel=next href=slide0353.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0352.htm');   
+  else
+    parent.location.href = "../02.fareast.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0352_background.gif" bgcolor=white alink="#0066ff"
+link=red vlink="#009900" text=black topmargin=0 leftmargin=0 onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=40 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=64 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=10 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=19 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=31 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=46 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=35 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=27 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=49 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=27 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=31></td>
+ </tr>
+ <tr>
+  <td width=29 height=33></td>
+  <td width=182 height=33 colspan=11>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=182 height=33><font face=Arial size=5>Java vs. SQL</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=264 height=33 colspan=19></td>
+ </tr>
+ <tr>
+  <td width=475 height=9 colspan=31></td>
+ </tr>
+ <tr>
+  <td width=300 height=6 colspan=18></td>
+  <td width=144 height=6 colspan=11><img src="slide0352_image051.gif" border=0
+  width=144 height=6></td>
+  <td width=31 height=6 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=31></td>
+ </tr>
+ <tr>
+  <td width=206 height=24 colspan=10></td>
+  <td width=52 height=24 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=52 height=24 align=center><font face=Arial color=white size=4><b><i>Java</i></b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=88 height=24 colspan=8></td>
+  <td width=49 height=24>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=49 height=24 align=center><font face=Arial color=white size=4><b><i>SQL</i></b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=80 height=24 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=475 height=9 colspan=31></td>
+ </tr>
+ <tr>
+  <td width=162 height=11 colspan=5></td>
+  <td width=4 height=186 rowspan=9><img src="slide0352_image052.gif" border=0
+  width=4 height=186></td>
+  <td width=309 height=11 colspan=25></td>
+ </tr>
+ <tr>
+  <td width=29 height=24></td>
+  <td width=104 height=24 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=104 height=24><font face=Arial color=white size=4><b><i>Approach</i></b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=29 height=24 colspan=2></td>
+  <td width=133 height=24 colspan=11>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=133 height=24 align=center><font face=Arial color=white size=4>Class/Object</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=16 height=24 colspan=3></td>
+  <td width=112 height=24 colspan=6>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=112 height=24 align=center><font face=Arial color=white size=4>Table/Row</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=48 height=24 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=162 height=22 colspan=5></td>
+  <td width=309 height=22 colspan=25></td>
+ </tr>
+ <tr>
+  <td width=29 height=24></td>
+  <td width=114 height=24 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=114 height=24><font face=Arial color=white size=4><b><i>Data Mgmt</i></b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=19 height=24></td>
+  <td width=41 height=24 colspan=5></td>
+  <td width=50 height=24 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=50 height=24 align=center><font face=Arial color=white size=4>Poor</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=85 height=24 colspan=8></td>
+  <td width=58 height=24 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=58 height=24 align=center><font face=Arial color=white size=4>Good</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=75 height=24 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=162 height=21 colspan=5></td>
+  <td width=309 height=21 colspan=25></td>
+ </tr>
+ <tr>
+  <td width=29 height=24></td>
+  <td width=40 height=24>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=40 height=24><font face=Arial color=white size=4><b><i>GUI</i></b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=93 height=24 colspan=3></td>
+  <td width=37 height=24 colspan=3></td>
+  <td width=58 height=24 colspan=6>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=58 height=24 align=center><font face=Arial color=white size=4>Good</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=85 height=24 colspan=7></td>
+  <td width=50 height=24 colspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=50 height=24 align=center><font face=Arial color=white size=4>Poor</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=79 height=24 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=162 height=21 colspan=5></td>
+  <td width=309 height=21 colspan=25></td>
+ </tr>
+ <tr>
+  <td width=29 height=24></td>
+  <td width=133 height=24 colspan=4>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=133 height=24><font face=Arial color=white size=4><b><i>Data
+    Access</i></b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=2 height=24></td>
+  <td width=128 height=24 colspan=9>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=128 height=24 align=center><font face=Arial color=white size=4>Navigational</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=16 height=24 colspan=3></td>
+  <td width=117 height=24 colspan=8>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=117 height=24 align=center><font face=Arial color=white size=4>Declarative</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=46 height=24 colspan=4></td>
+ </tr>
+ <tr>
+  <td width=162 height=15 colspan=5></td>
+  <td width=309 height=15 colspan=25></td>
+ </tr>
+ <tr>
+  <td width=475 height=34 colspan=31></td>
+ </tr>
+ <tr>
+  <td width=199 height=11 colspan=8></td>
+  <td width=101 height=11 colspan=10><img src="master11_image053.gif" border=0
+  width=101 height=11></td>
+  <td width=136 height=11 colspan=10></td>
+  <td width=12 height=11 colspan=2><img src="master11_image054.gif" border=0
+  width=12 height=11></td>
+  <td width=27 height=11></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=31></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java, XML and Databases</title>
+<meta name=Description content="30-Aug-02: 1: Java Stored Procedures">
+<link rel=next href=slide0379.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0375.htm');   
+  else
+    parent.location.href = "../02.fareast.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="master11_background.jpg" bgcolor=white alink="#0066ff"
+link=red vlink="#009900" text=black topmargin=0 leftmargin=0 onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=170 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=101 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=91 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=45 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=29 height=33></td>
+  <td width=362 height=33 colspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=362 height=33><font face=Arial size=5>1: Java Stored Procedures</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=84 height=33 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=12 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=29 height=214></td>
+  <td width=419 height=214 colspan=5>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=36 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=130 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=37 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=20 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=34 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=77 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=279 height=24 colspan=9><font face=Arial size=4>Aimed at Java
+    programmers</font><br>
+    </td>
+    <td width=122 height=24 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=418 height=6 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=245 height=24 colspan=8><font face=Arial size=4>Java code runs in
+    DBMS</font><br>
+    </td>
+    <td width=156 height=24 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=418 height=7 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=401 height=24 colspan=12><font face=Arial size=4>Provides
+    portability – same code can run</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=17 height=22></td>
+    <td width=369 height=22 colspan=11><font face=Arial size=4>in Client,
+    Application Server or DBMS</font><br>
+    </td>
+    <td width=32 height=22></td>
+   </tr>
+   <tr>
+    <td width=418 height=7 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=58 height=24 colspan=5><font face=Arial size=4>Steps</font><br>
+    </td>
+    <td width=343 height=24 colspan=7></td>
+   </tr>
+   <tr>
+    <td width=418 height=5 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=22 colspan=3></td>
+    <td width=15 height=22><font face=Wingdings color="#0000cc" size=2>u</font></td>
+    <td width=271 height=22 colspan=7><font face=Arial size=3>Define Java class
+    and methods</font><br>
+    </td>
+    <td width=109 height=22 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=418 height=3 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=22 colspan=3></td>
+    <td width=15 height=22><font face=Wingdings color="#0000cc" size=2>u</font></td>
+    <td width=204 height=22 colspan=4><font face=Arial size=3>Install JAR file
+    in server</font><br>
+    </td>
+    <td width=176 height=22 colspan=5></td>
+   </tr>
+   <tr>
+    <td width=418 height=2 colspan=13></td>
+   </tr>
+   <tr>
+    <td width=23 height=22 colspan=3></td>
+    <td width=15 height=22><font face=Wingdings color="#0000cc" size=2>u</font></td>
+    <td width=167 height=22 colspan=3><font face=Arial size=3>Register Java
+    code</font><br>
+    </td>
+    <td width=213 height=22 colspan=6></td>
+   </tr>
+  </table>
+  </td>
+  <td width=27 height=214></td>
+ </tr>
+ <tr>
+  <td width=475 height=48 colspan=7></td>
+ </tr>
+ <tr>
+  <td width=199 height=11 colspan=2></td>
+  <td width=101 height=11><img src="master11_image069.gif" border=0 width=101
+  height=11></td>
+  <td width=136 height=11 colspan=2></td>
+  <td width=12 height=11><img src="master11_image070.gif" border=0 width=12
+  height=11></td>
+  <td width=27 height=11></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=7></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Java, XML and Databases</title>
+<meta name=Description content="30-Aug-02: SQLj (2)">
+<link rel=next href=slide0370.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0369.htm');   
+  else
+    parent.location.href = "../02.fareast.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0369_background.gif" bgcolor=white alink="#0066ff"
+link=red vlink="#009900" text=black topmargin=0 leftmargin=0 onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=6 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=65 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=14 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=22 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=38 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=16 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=85 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=1 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=52 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=25 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=59 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=32 colspan=19></td>
+ </tr>
+ <tr>
+  <td width=29 height=33></td>
+  <td width=114 height=33 colspan=5>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=114 height=33><font face=Arial size=5>SQLj (2)</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=332 height=33 colspan=13></td>
+ </tr>
+ <tr>
+  <td width=475 height=14 colspan=19></td>
+ </tr>
+ <tr>
+  <td width=29 height=56></td>
+  <td width=271 height=56 colspan=12>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=194 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=196 height=24 colspan=2><font face=Arial size=4>Command-line
+    utility</font><br>
+    </td>
+    <td width=57 height=24></td>
+   </tr>
+   <tr>
+    <td width=270 height=8 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=17 height=24><font face=Wingdings color=red size=2>n</font></td>
+    <td width=253 height=24 colspan=3><font face=Arial size=4>Optional schema
+    checking</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=175 height=56 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=475 height=43 colspan=19></td>
+ </tr>
+ <tr>
+  <td width=121 height=7 colspan=5></td>
+  <td width=60 height=28 colspan=2 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=15 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=30 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=15 height=14></td>
+    <td width=30 height=14 align=center><font face=Arial size=1>SQLj</font><br>
+    </td>
+    <td width=15 height=14></td>
+   </tr>
+   <tr>
+    <td width=60 height=1 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=60 height=14 colspan=3 align=center><font face=Arial size=1>Translator</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=16 height=7></td>
+  <td width=90 height=28 colspan=3 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=11 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=68 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=90 height=14 colspan=3 align=center><font face=Arial size=1>Java
+    Code with</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=90 height=1 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=11 height=14></td>
+    <td width=68 height=14 align=center><font face=Arial size=1>JDBC Calls</font><br>
+    </td>
+    <td width=11 height=14></td>
+   </tr>
+  </table>
+  </td>
+  <td width=12 height=7></td>
+  <td width=53 height=28 colspan=2 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=12 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=28 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=12 height=14></td>
+    <td width=28 height=14 align=center><font face=Arial size=1>Java</font><br>
+    </td>
+    <td width=13 height=14></td>
+   </tr>
+   <tr>
+    <td width=53 height=1 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=53 height=14 colspan=3 align=center><font face=Arial size=1>Compiler</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=25 height=7></td>
+  <td width=78 height=28 colspan=3 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=10 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=58 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=78 height=14 colspan=3 align=center><font face=Arial size=1>Regular
+    Java</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=78 height=1 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=10 height=14></td>
+    <td width=58 height=14 align=center><font face=Arial size=1>Class File</font><br>
+    </td>
+    <td width=10 height=14></td>
+   </tr>
+  </table>
+  </td>
+  <td width=20 height=7></td>
+ </tr>
+ <tr>
+  <td width=35 height=14 colspan=2></td>
+  <td width=65 height=14>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=65 height=14 align=center><font face=Arial size=1>SQLj Code</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=21 height=14 colspan=2></td>
+  <td width=16 height=14></td>
+  <td width=12 height=14></td>
+  <td width=25 height=14></td>
+  <td width=20 height=14></td>
+ </tr>
+ <tr>
+  <td width=121 height=7 colspan=5></td>
+  <td width=16 height=7></td>
+  <td width=12 height=7></td>
+  <td width=25 height=7></td>
+  <td width=20 height=7></td>
+ </tr>
+ <tr>
+  <td width=475 height=3 colspan=19></td>
+ </tr>
+ <tr>
+  <td width=114 height=92 colspan=4></td>
+  <td width=88 height=92 colspan=6><img src="slide0369_image062.gif" border=0
+  width=88 height=92></td>
+  <td width=273 height=92 colspan=9></td>
+ </tr>
+ <tr>
+  <td width=475 height=38 colspan=19></td>
+ </tr>
+ <tr>
+  <td width=199 height=11 colspan=9></td>
+  <td width=101 height=11 colspan=4><img src="master11_image063.gif" border=0
+  width=101 height=11></td>
+  <td width=136 height=11 colspan=3></td>
+  <td width=12 height=11><img src="master11_image064.gif" border=0 width=12
+  height=11></td>
+  <td width=27 height=11 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=6 colspan=19></td>
+ </tr>
+</table>
+
+</body>
+
+</html>

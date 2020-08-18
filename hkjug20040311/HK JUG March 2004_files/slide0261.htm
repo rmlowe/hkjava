@@ -1,0 +1,286 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+<title>Jerry Held</title>
+<meta name=Description
+content="31-Mar-04: Just in Time Reading – Faulting Process">
+<link rel=next href=slide0232.htm>
+<![if !ppt]>
+<script>
+<!--
+function Update()
+{
+  if( window.name == "PPTSld" )
+    parent.SlideUpdated('slide0261.htm');   
+  else
+    parent.location.href = "../HK%20JUG%20March%202004.htm";
+}
+
+function NoHref() {}
+//-->
+</script>
+<![endif]>
+</head>
+
+<body background="slide0261_background.gif" bgcolor=black alink="#ffff66"
+link="#fd0000" vlink="#cecece" text=white topmargin=0 leftmargin=0
+onload="Update()">
+
+<table border=0 valign=top width=475 height=356 cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=17 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=27 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=27 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=29 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=7 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=21 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=19 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=24 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=4 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=3 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=76 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=23 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=51 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=40 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=8 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=2 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=14 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=10 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=10 height=0 nowrap><img src=space.gif border=0></td>
+  <td width=13 height=0 nowrap><img src=space.gif border=0></td>
+ </tr>
+ <tr>
+  <td width=475 height=35 colspan=22></td>
+ </tr>
+ <tr>
+  <td width=17 height=22></td>
+  <td width=374 height=22 colspan=16>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=374 height=22><font face=Arial size=3><b>Just in Time Reading –
+    Faulting Process</b></font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=84 height=22 colspan=5></td>
+ </tr>
+ <tr>
+  <td width=475 height=24 colspan=22></td>
+ </tr>
+ <tr>
+  <td width=175 height=28 colspan=9></td>
+  <td width=166 height=28 colspan=5>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=24 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=166 height=14 colspan=2><font face=Arial size=1>Accessing
+    relationship for first</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=24 height=14><font face=Arial size=1>time</font><br>
+    </td>
+    <td width=142 height=14></td>
+   </tr>
+  </table>
+  </td>
+  <td width=134 height=28 colspan=8></td>
+ </tr>
+ <tr>
+  <td width=71 height=2 colspan=3></td>
+  <td width=57 height=14 colspan=3 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=57 height=14 align=center><font face=Arial size=1>Customer</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=347 height=2 colspan=16></td>
+ </tr>
+ <tr>
+  <td width=71 height=12 colspan=3></td>
+  <td width=253 height=12 colspan=9></td>
+  <td width=34 height=14 colspan=4 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=34 height=14 align=center><font face=Arial size=1>Proxy</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=60 height=12 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=381 height=2 colspan=15></td>
+  <td width=60 height=2 colspan=3></td>
+ </tr>
+ <tr>
+  <td width=475 height=27 colspan=22></td>
+ </tr>
+ <tr>
+  <td width=290 height=16 colspan=13></td>
+  <td width=99 height=28 colspan=3 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=72 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=99 height=14 colspan=2><font face=Arial size=1>Get related object</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=72 height=14><font face=Arial size=1>based on FK</font><br>
+    </td>
+    <td width=27 height=14></td>
+   </tr>
+  </table>
+  </td>
+  <td width=86 height=16 colspan=6></td>
+ </tr>
+ <tr>
+  <td width=290 height=12 colspan=13></td>
+  <td width=16 height=12 colspan=2></td>
+  <td width=33 height=57 colspan=3 rowspan=7>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=21 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=5 height=0 nowrap><img src=space.gif border=0></td>
+    <td width=5 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=26 height=14 colspan=2><font face=Arial size=1>Plug</font><br>
+    </td>
+    <td width=7 height=14 colspan=2></td>
+   </tr>
+   <tr>
+    <td width=31 height=14 colspan=3><font face=Arial size=1>result</font><br>
+    </td>
+    <td width=2 height=14></td>
+   </tr>
+   <tr>
+    <td width=21 height=14><font face=Arial size=1>into</font><br>
+    </td>
+    <td width=12 height=14 colspan=3></td>
+   </tr>
+   <tr>
+    <td width=33 height=1 colspan=4></td>
+   </tr>
+   <tr>
+    <td width=33 height=14 colspan=4><font face=Arial size=1>Proxy</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=37 height=12></td>
+ </tr>
+ <tr>
+  <td width=405 height=8 colspan=18></td>
+  <td width=37 height=8></td>
+ </tr>
+ <tr>
+  <td width=44 height=8 colspan=2></td>
+  <td width=56 height=28 colspan=2 rowspan=3>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=41 height=0 nowrap><img src=space.gif border=0></td>
+   </tr>
+   <tr>
+    <td width=56 height=14 colspan=2><font face=Arial size=1>SQL if not</font><br>
+    </td>
+   </tr>
+   <tr>
+    <td width=41 height=14><font face=Arial size=1>cached</font><br>
+    </td>
+    <td width=15 height=14></td>
+   </tr>
+  </table>
+  </td>
+  <td width=305 height=8 colspan=14></td>
+  <td width=37 height=8></td>
+ </tr>
+ <tr>
+  <td width=44 height=4 colspan=2></td>
+  <td width=7 height=4></td>
+  <td width=40 height=72 colspan=2 rowspan=6><img src="slide0261_image020.gif"
+  border=0 width=40 height=72></td>
+  <td width=258 height=4 colspan=11></td>
+  <td width=37 height=4></td>
+ </tr>
+ <tr>
+  <td width=44 height=16 colspan=2></td>
+  <td width=7 height=16></td>
+  <td width=24 height=16></td>
+  <td width=17 height=80 colspan=2 rowspan=7><img src="slide0261_image021.gif"
+  border=0 width=17 height=80></td>
+  <td width=217 height=16 colspan=8></td>
+  <td width=37 height=16></td>
+ </tr>
+ <tr>
+  <td width=107 height=8 colspan=5></td>
+  <td width=24 height=8></td>
+  <td width=217 height=8 colspan=8></td>
+  <td width=37 height=8></td>
+ </tr>
+ <tr>
+  <td width=107 height=1 colspan=5></td>
+  <td width=24 height=1></td>
+  <td width=3 height=1></td>
+  <td width=76 height=14 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=76 height=14><font face=Arial size=1>Check Cache</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=138 height=1 colspan=6></td>
+  <td width=37 height=1></td>
+ </tr>
+ <tr>
+  <td width=107 height=13 colspan=5></td>
+  <td width=24 height=13></td>
+  <td width=3 height=13></td>
+  <td width=208 height=13 colspan=10></td>
+ </tr>
+ <tr>
+  <td width=107 height=30 colspan=5></td>
+  <td width=24 height=30></td>
+  <td width=287 height=30 colspan=12></td>
+ </tr>
+ <tr>
+  <td width=171 height=11 colspan=8></td>
+  <td width=287 height=11 colspan=12></td>
+ </tr>
+ <tr>
+  <td width=171 height=1 colspan=8></td>
+  <td width=203 height=1 colspan=7></td>
+  <td width=34 height=14 colspan=3 rowspan=2>
+  <table border=0 valign=top cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=34 height=14 align=center><font face=Arial size=1>Order</font><br>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width=50 height=1 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=391 height=13 colspan=17></td>
+  <td width=50 height=13 colspan=2></td>
+ </tr>
+ <tr>
+  <td width=475 height=63 colspan=22></td>
+ </tr>
+</table>
+
+</body>
+
+</html>
